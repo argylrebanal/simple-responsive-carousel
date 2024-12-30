@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Carousel</title>
+</head>
+
+<body>
+    <!-- Source: https://www.cssscript.com/demo/responsive-classic-carousel/#google_vignette -->
+    <div class="slider">
+        <!-- Slide 1 -->
+        <div class="myslide fade">
+            <div class="overlay"></div>
+                <div class="txt">
+                    <h1>Shine a Light!</h1>
+                    <p>Brighten your path with our top flashlights.</p>
+                  </div>
+                <img class="slider_img" src="./assets/img-1.webp" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="myslide fade">
+            <div class="overlay"></div>
+                <div class="txt">
+                    <h1>In-tents Situations</h1>
+                    <p>Stay safe in any weather with our Mission tent.</p>
+                </div>
+                <img class="slider_img" src="./assets/tent.webp" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="myslide fade">
+            <div class="overlay"></div>
+                <div class="txt">
+                    <h1>Adventure Awaits.</h1>
+                    <p>Gear up for your next adventure.</p>
+                </div>
+                <img class="slider_img" src="./assets/adventure.webp" />
+            </div>
+        <!-- Slide 3 -->
+        <div class="myslide fade">
+            <div class="overlay"></div>
+
+                <div class="txt">
+                    <h1>Run. Sleep. Repeat.</h1>
+                    <p>Weekend warrior or ultra-runner, we've got essentials for life on the run.</p>
+                </div>
+                <img class="slider_img" src="./assets/img-3.webp" />
+        </div>
+        <!-- Navigation Arrows -->
+        <!-- Feel free to replace the navigation icons here -->
+        <a class="prev" onclick="plusSlides(-1)">
+          <i class="bx bx-chevron-left"></i>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+          <i class="bx bx-chevron-right"></i>
+        </a>
+        <!-- Pagination -->
+        <div class="dotsbox" style="text-align: center">
+          <button class="dot" onclick="currentSlide(1)"></button>
+          <button class="dot" onclick="currentSlide(2)"></button>
+          <button class="dot" onclick="currentSlide(3)"></button>
+          <button class="dot" onclick="currentSlide(4)"></button>
+        </div>
+      </div>    
+    <script src="script.js"></script>
+</body>
+</html>
